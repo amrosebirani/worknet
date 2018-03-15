@@ -4,10 +4,37 @@ import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import { linkTo } from '@storybook/addon-links';
 
-import { Button, Welcome } from '@storybook/react/demo';
+storiesOf('Buttons', module)
+  .add('AddProjectButton', () => (<div />)); 
 
-storiesOf('Welcome', module).add('to Storybook', () => <Welcome showApp={linkTo('Button')} />);
+storiesOf('Cards', module)
+  .add('AudioCard', () => (<div />))
+  .add('ClientInfo', () => (<div />))
+  .add('CoverCard', () => (<div />))
+  .add('EmptyCard', () => (<div />))
+  .add('ImageCard', () => (<div />))
+  .add('ProjectBasicInfo', () => (<div />))
+  .add('TextCard', () => (<div />));
 
-storiesOf('Button', module)
-  .add('with text', () => <Button onClick={action('clicked')}>Hello Button</Button>)
-  .add('with some emoji', () => <Button onClick={action('clicked')}>😀 😎 👍 💯</Button>);
+
+storiesOf('InputAtoms', module)
+  .add('AudioCapture', () => (<div />))
+  .add('ImagePicker', () => (<div />))
+  .add('TextEdit', () => (<div />));
+
+storiesOf('Filters', module)
+  .add('SwitchFilter', () => (<div />))
+  .add('CardTypePicker', () => (<div />));
+
+storiesOf('Project', module)
+  .add('ProjectItem', () => (<div />))
+  .add('ProjectList', () => (<div />))
+  .add('ProjectStructure', () => (<div />));
+
+storiesOf('Auth', module)
+  .add('Login', () => (<div />))
+  .add('Signup', () => (<div />));
+
+storiesOf('CardContainers', module)
+  .add('CardCarousel', () => (<div />))
+  .add('CardOverlay', () => (<div />));
